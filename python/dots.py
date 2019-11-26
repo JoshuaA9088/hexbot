@@ -21,6 +21,7 @@ def hex_to_rgb(HEX):
     RGB = tuple(int(HEX[i:i+2], 16) for i in (0, 2, 4))
     return RGB[::-1]
 
+
 if __name__ == "__main__":
     while True:
         image = np.ones((height, width, 3), np.uint8) * 255
